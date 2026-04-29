@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MDung_Lab1</string>
+    <string name="content">
+    Android - Application Component:
+    1. Activity
+    2. Service
+    3. ContentProvider
+    4. BroadcastReceiver
+</string>
+</resources>

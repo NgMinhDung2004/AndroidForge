@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MDung_Lab1</string>
+    <string name="content">\n    Android - Thành phần ứng dụng: \n    1. Hoạt động \n    2. Dịch vụ \n    3. Nhà cung cấp nội dung \n    4. Nhận phát sóng\n</string>
+</resources>
