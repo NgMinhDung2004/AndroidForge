@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout: Layout gốc -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4F8"
+    tools:context=".MainActivity">
+    <!-- ScrollView: Bọc nội dung bên trong để có thể cuộn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+        <!-- LinearLayout: Chứa tất cả các widget -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <!-- Tiêu đề -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="24dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="20dp">
+                <!-- TextView: Hiển thị tiêu đề -->
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Widgets trong Android"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E3A8A"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:id="@+id/textViewInstruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Làm quen với các Widget cơ bản"
+                    android:textSize="15sp"
+                    android:textColor="#64748B"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"/>
+                <!-- Thông tin về Layout -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Layout đang dùng:"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#475569"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• LinearLayout (root): Layout gốc\n•
+ScrollView: Cho phép cuộn nội dung\n• LinearLayout (child): Chứa các widget"
+
+                    android:textSize="13sp"
+                    android:textColor="#64748B"
+                    android:lineSpacingExtra="2dp"/>
+
+            </LinearLayout>
+            <!-- 1: Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Button - Nút Bấm"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="12dp"/>
+                <Button
+                    android:id="@+id/buttonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:text="Nhấn vào đây"
+                    android:backgroundTint="#10B981"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:elevation="4dp"
+
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <!-- 2: ImageView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. ImageView - Hiển thị hình ảnh"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="12dp"/>
+                <ImageView
+                    android:id="@+id/imageViewDemo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:background="#EEF2FF"
+                    android:padding="20dp"
+                    android:elevation="2dp"/>
+
+            </LinearLayout>
+            <!-- 3: EditText -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="3. EditText - Ô nhập văn bản"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="12dp"/>
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="Nhập tên của bạn"
+                    android:inputType="textPersonName"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:background="#F1F5F9"
+                    android:textColor="#1E293B"
+                    android:textColorHint="#94A3B8"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <!-- 4: CheckBox -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. CheckBox - Hộp kiểm (chọn nhiều)"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="12dp"/>
+                <CheckBox
+                    android:id="@+id/checkBoxJava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Java"
+                    android:textSize="15sp"
+
+                    android:textColor="#334155"
+                    android:buttonTint="#3B82F6"
+                    android:paddingStart="8dp"/>
+                <CheckBox
+                    android:id="@+id/checkBoxKotlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin"
+                    android:textSize="15sp"
+                    android:textColor="#334155"
+                    android:buttonTint="#3B82F6"
+                    android:paddingStart="8dp"
+                    android:layout_marginTop="8dp"/>
+                <CheckBox
+                    android:id="@+id/checkBoxFlutter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flutter"
+                    android:textSize="15sp"
+                    android:textColor="#334155"
+                    android:buttonTint="#3B82F6"
+                    android:paddingStart="8dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+            <!-- 5: RadioButton -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. RadioButton - Nút chọn (chọn 1)"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="12dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radioButtonMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nam"
+                        android:textSize="15sp"
+                        android:textColor="#334155"
+                        android:buttonTint="#8B5CF6"
+                        android:paddingStart="8dp"
+                        android:layout_marginEnd="24dp"/>
+                    <RadioButton
+                        android:id="@+id/radioButtonFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nữ"
+                        android:textSize="15sp"
+                        android:textColor="#334155"
+                        android:buttonTint="#8B5CF6"
+                        android:paddingStart="8dp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="GỬI THÔNG TIN"
+                android:backgroundTint="#F59E0B"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp"/>
+            <!-- TextView hiển thị kết quả sau khi Gửi thông tin -->
+            <LinearLayout
+                android:id="@+id/layoutResult"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/textViewResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#1E293B"
+                    android:lineSpacingExtra="4dp"/>
+
+            </LinearLayout>
+            <!-- 6: ProgressBar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. ProgressBar - Thanh tiến trình"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="16dp"/>
+                <ProgressBar
+                    android:id="@+id/progressBarLoading"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="#8B5CF6"
+                    android:progressBackgroundTint="#E0E7FF"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/buttonStartProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:text="Bắt đầu tiến trình"
+                    android:backgroundTint="#8B5CF6"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:elevation="4dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
