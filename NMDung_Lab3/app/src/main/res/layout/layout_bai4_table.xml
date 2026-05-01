@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:padding="16dp"
+    android:layout_marginTop="20dp">
+
+    <!-- Header -->
+    <TableRow>
+        <TextView
+            android:text="STT"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="Họ và Tên"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="Lớp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="Điểm"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:background="@drawable/table_cell_border"/>
+    </TableRow>
+
+    <!-- Row 1 -->
+    <TableRow>
+        <TextView
+            android:text="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="Nguyễn Văn A"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="10A1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="9.0"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+    </TableRow>
+
+    <!-- Row 2 -->
+    <TableRow>
+        <TextView
+            android:text="3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="Trần Văn B"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="10A1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="8.0"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+    </TableRow>
+
+    <!-- Row 3 -->
+    <TableRow>
+        <TextView
+            android:text="3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="Ngô Văn C"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="10A1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+
+        <TextView
+            android:text="10.0"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/table_cell_border"/>
+    </TableRow>
+
+</TableLayout>
