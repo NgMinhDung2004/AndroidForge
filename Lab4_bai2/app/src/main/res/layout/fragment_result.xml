@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ResultFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="KẾT QUẢ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/textViewMaSinhVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã sinh viên: "
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewHoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ tên: "
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewDiemToan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm Toán: "
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewDiemLy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm Lý: "
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewDiemHoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm Hóa: "
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewDiemTrungBinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điêm trung bình: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewXepLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xếp loại: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/buttonQuayLai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay lại" />
+
+</LinearLayout>
