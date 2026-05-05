@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Nhóm các menu bằng thẻ group -->
+    <!-- checkableBehavior="single" quy định cách chọn trong nhóm none/single/all -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tat_ca"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Tất cả công việc" />
+
+        <item
+            android:id="@+id/nav_cong_viec"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Công việc" />
+
+        <item
+            android:id="@+id/nav_ca_nhan"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Cá nhân" />
+
+        <item
+            android:id="@+id/nav_khan_cap"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="Khẩn cấp" />
+
+        <item
+            android:id="@+id/nav_hoan_thanh"
+            android:icon="@android:drawable/checkbox_on_background"
+            android:title="Đã hoàn thành" />
+    </group>
+
+    <item android:title="Khác">
+        <menu>
+            <item
+                android:id="@+id/nav_cai_dat"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Cài đặt" />
+
+            <item
+                android:id="@+id/nav_gioi_thieu"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="Giới thiệu" />
+        </menu>
+    </item>
+</menu>

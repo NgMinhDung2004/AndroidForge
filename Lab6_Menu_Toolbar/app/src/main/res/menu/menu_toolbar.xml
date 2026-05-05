@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- SearchView -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Tìm kiếm"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <!-- Sắp xếp -->
+    <item
+        android:id="@+id/action_sap_xep"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Sắp xếp">
+        <!-- Lồng menu trong menu-->
+        <menu>
+            <item
+                android:id="@+id/action_sap_xep_ten"
+                android:title="Theo tên" />
+            <item
+                android:id="@+id/action_sap_xep_ngay"
+                android:title="Theo ngày" />
+        </menu>
+    </item>
+
+    <!-- Lọc -->
+    <item
+        android:id="@+id/action_loc"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Lọc">
+        <menu>
+            <item
+                android:id="@+id/action_loc_cong_viec"
+                android:title="Công việc" />
+            <item
+                android:id="@+id/action_loc_ca_nhan"
+                android:title="Cá nhân" />
+            <item
+                android:id="@+id/action_loc_khan_cap"
+                android:title="Khẩn cấp" />
+            <item
+                android:id="@+id/action_loc_hoan_thanh"
+                android:title="Đã hoàn thành" />
+        </menu>
+    </item>
+
+    <!-- Xóa tất cả -->
+    <item
+        android:id="@+id/action_xoa_tat_ca"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:iconTint="@color/red"
+        android:title="Xóa tất cả" />
+</menu>

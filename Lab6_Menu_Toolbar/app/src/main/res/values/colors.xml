@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary -->
+    <color name="blue_primary">#1565C0</color>
+    <color name="blue_dark">#0D47A1</color>
+
+    <!-- Text -->
+    <color name="text_dark">#212121</color>
+    <color name="text_light">#FFFFFF</color>
+
+    <!-- Menu -->
+    <color name="menu_bg">#FFFFFF</color>
+    <color name="menu_text">#212121</color>
+    <color name="menu_icon">#1565C0</color>
+
+    <!-- Danger -->
+    <color name="red">#D32F2F</color>
+</resources>

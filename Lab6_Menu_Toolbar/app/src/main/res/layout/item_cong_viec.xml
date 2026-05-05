@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/checkBoxHoanThanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/textViewTenCongViec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên công việc"
+            android:textSize="16sp"
+            android:textColor="@color/text_dark" />
+
+        <TextView
+            android:id="@+id/textViewLoaiCongViec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại công việc"
+            android:textSize="12sp"
+            android:textColor="@color/text_dark" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewLoai"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_agenda" />
+
+</LinearLayout>
