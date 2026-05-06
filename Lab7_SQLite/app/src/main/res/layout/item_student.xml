@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Student Code and Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvStudentCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MSV: SV001"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/purple_700" />
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Sửa"
+                android:scaleType="centerInside"
+                android:padding="8dp" />
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Xóa"
+                android:scaleType="centerInside"
+                android:padding="8dp" />
+        </LinearLayout>
+        <!-- Full Name -->
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Văn An"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+        <!-- Date of Birth -->
+        <TextView
+            android:id="@+id/tvDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày sinh: 15/03/2003"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="8dp" />
+        <!-- Major -->
+        <TextView
+            android:id="@+id/tvMajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngành: Công nghệ thông tin"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@android:drawable/ic_menu_agenda"
+            android:drawablePadding="8dp" />
+        <!-- GPA -->
+        <TextView
+            android:id="@+id/tvGpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPA: 3.5"
+            android:textSize="14sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@android:drawable/star_on"
+            android:drawablePadding="8dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

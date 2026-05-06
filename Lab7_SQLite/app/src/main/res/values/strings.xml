@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lab07-SQLite</string>
+    <string name="student_code">Mã sinh viên</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="date_of_birth">Ngày sinh</string>
+    <string name="major">Ngành học</string>
+    <string name="gpa">GPA</string>
+    <string name="add_student">Thêm sinh viên</string>
+    <string name="edit_student">Sửa sinh viên</string>
+    <string name="delete_student">Xóa sinh viên</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="update">Cập nhật</string>
+    <string name="student_details">Chi tiết sinh viên</string>
+    <string name="confirm_delete">Xác nhận xóa</string>
+    <string name="delete_message">Bạn có chắc chắn muốn xóa sinh viên này?</string>
+</resources>
