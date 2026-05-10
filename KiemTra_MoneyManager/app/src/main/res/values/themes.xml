@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KiemTra_MoneyManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        
+        <!-- Status bar and Navigation bar for Android 15 Edge-to-Edge -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        
+        <!-- Customize your light theme here. -->
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.KiemTra_MoneyManager" parent="Base.Theme.KiemTra_MoneyManager" />
+</resources>
